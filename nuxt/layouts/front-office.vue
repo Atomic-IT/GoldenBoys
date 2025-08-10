@@ -1,9 +1,6 @@
 <template>
-  <div id="front-office">
-    <dm-screen-loader />
-    <ad-section-navbar />
+  <div id="front-office" class="golden-boys">
     <slot />
-    <ad-section-footer />
   </div>
 </template>
 

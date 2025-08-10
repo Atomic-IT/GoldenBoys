@@ -1,5 +1,5 @@
 <template>
-  <div id="back-office">
+  <div id="back-office" class="golden-boys">
     <slot />
     <ad-dock />
   </div>

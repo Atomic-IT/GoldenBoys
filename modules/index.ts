@@ -1,3 +1,4 @@
+// DataManager modules
 export * from './dm_activity'
 export * from './dm_animations'
 export * from './dm_api'
@@ -11,3 +12,6 @@ export * from './dm_pages'
 export * from './dm_screen_lights'
 export * from './dm_screen_loader'
 export * from './dm_tasks'
+
+// GoldenBoys modules
+export * from './gb_pages'

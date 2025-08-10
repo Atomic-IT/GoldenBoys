@@ -1,8 +1,5 @@
 <template>
   <div>
-    <client-only>
-      <dm-screen-lights :count="8" />
-    </client-only>
     <ad-toast />
     <NuxtRouteAnnouncer />
     <NuxtLayout :name="officeType">
