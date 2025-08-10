@@ -2,17 +2,17 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <nuxt-link class="application-header" to="/home">
+      <nuxt-link class="application-header" to="/strona-glowna">
         <ad-image
-          :src="imgUrl + 'logo.svg'"
+          :src="gbImgUrl + 'golden-boys-logo.svg'"
           class="logo"
-          alt="DataManager logo"
+          alt="GoldenBoys logo"
           fetchpriority="high"
         />
 
         <ad-heading
           :tag="1"
-          text="DataManager"
+          text="GoldenBoys"
           class="application-header-text"
         />
       </nuxt-link>
@@ -41,17 +41,17 @@ import { NavbarDrawer, NavbarLinks } from './components'
 const { navbarExpanded, toggleNavbar } = useNavbar()
 
 onMounted(() => {
-  bounceFadeIn('.navbar .logo', { delay: 2.2, duration: 0.3 })
+  bounceFadeIn('.navbar .logo', { delay: 0.5, duration: 0.3 })
   gsap.fromTo(
     '.navbar .application-header-text',
     { opacity: 0, y: 20 },
-    { opacity: 1, y: 0, duration: 0.2, delay: 2.4 }
+    { opacity: 1, y: 0, duration: 0.2, delay: 0.5 }
   )
   gsap.to('.navbar', {
     opacity: 1,
     duration: 0.3,
     ease: 'power2.out',
-    delay: 2.2,
+    delay: 0.5,
   })
 })
 </script>

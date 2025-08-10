@@ -88,6 +88,39 @@ Route::get('/_fonts/{path}', function ($path) {
 })->where('path', '.*');
 
 /**
+ *  Serve modules images
+ */
+Route::get('/modules/{module}/img/{path}', function ($module, $path) {
+    $mimeTypes = [
+        'svg' => 'image/svg+xml',
+        'png' => 'image/png',
+        'jpg' => 'image/jpeg',
+        'jpeg' => 'image/jpeg',
+        'gif' => 'image/gif',
+        'ico' => 'image/x-icon',
+        'webp' => 'image/webp',
+    ];
+
+    $filePath = base_path("modules/{$module}/img/{$path}");
+    if (!file_exists($filePath)) {
+        return response()->json(['error' => 'File not found'], 404);
+    }
+
+    $extension = pathinfo($path, PATHINFO_EXTENSION);
+    $contentType = $mimeTypes[$extension] ?? 'application/octet-stream';
+
+    $content = file_get_contents($filePath);
+
+    return response($content, 200, [
+        'Content-Type' => $contentType,
+        'Cache-Control' => 'public, max-age=31536000',
+        'Access-Control-Allow-Origin' => '*',
+        'Access-Control-Allow-Methods' => 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers' => 'Content-Type, Authorization, X-Requested-With, X-XSRF-TOKEN, Referer-Slug',
+    ]);
+})->where('path', '.*');
+
+/**
  *  Serve Nuxt application for all other routes
  */
 Route::get('/{any}', function ($any) {
@@ -98,7 +131,7 @@ Route::get('/{any}', function ($any) {
     }
 
     return response()->json(['error' => 'Page not found'], 404);
-})->where('any', '^(?!api/|logout).+');
+})->where('any', '^(?!api/|logout|modules/).+');
 
 Route::prefix('/')->group(function () {
     Route::get('', fn () => redirect()->route('home'));

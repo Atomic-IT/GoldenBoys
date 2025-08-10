@@ -2,25 +2,19 @@ import type { NavLinkObjectInterface } from '.'
 
 export const navLinks: NavLinkObjectInterface[] = [
   {
-    label: 'Home',
-    href: '/home',
+    label: 'Strona główna',
+    href: '/strona-glowna',
   },
   {
-    label: 'Services',
-    href: '/services',
+    label: 'O nas',
+    href: '/strona-glowna',
   },
   {
-    label: 'About',
-    href: '/about',
+    label: 'Oferta',
+    href: '/strona-glowna',
   },
   {
-    label: 'Blog',
-    href: '/blog',
-  },
-  {
-    label: 'Login',
-    href: '/login',
-    isButton: true,
-    class: 'login-button',
+    label: 'Realizacje',
+    href: '/strona-glowna',
   },
 ]
