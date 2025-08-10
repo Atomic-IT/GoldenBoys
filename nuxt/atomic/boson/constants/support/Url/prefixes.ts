@@ -8,4 +8,4 @@ export const storysetBlogImgUrl: string = '/img/storyset/blog/'
 export const technologiesImgUrl: string = '/img/technologies/'
 
 // GoldenBoys modules
-export const gbImgUrl: string = '/modules/gb_pages/img/'
+export const gbImgUrl: string = '/img/goldenboys/'

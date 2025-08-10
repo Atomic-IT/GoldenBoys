@@ -6,15 +6,15 @@ export const navLinks: NavLinkObjectInterface[] = [
     href: '/strona-glowna',
   },
   {
-    label: 'O nas',
-    href: '/strona-glowna',
-  },
-  {
     label: 'Oferta',
-    href: '/strona-glowna',
+    href: '/oferta',
   },
   {
     label: 'Realizacje',
     href: '/strona-glowna',
+  },
+  {
+    label: 'Kontakt',
+    href: '/kontakt',
   },
 ]

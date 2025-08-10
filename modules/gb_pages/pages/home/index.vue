@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <ad-section-navbar />
-    <h1>Home</h1>
+    <ad-section-footer />
   </div>
 </template>
 
