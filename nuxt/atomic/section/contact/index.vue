@@ -2,21 +2,19 @@
   <div id="contact">
     <div class="contact-content container">
       <ad-paragraph class="contact-content-title">
-        <span>Contact</span>&nbsp;
-        <span>Us</span>
+        <span>Skontaktuj się</span>&nbsp;
+        <span>z nami</span>
       </ad-paragraph>
 
-      <ad-paragraph
-        text="
-          If you have any questions, need assistance, or would like to learn more
-          about our project, don’t hesitate to reach out. We’re here to help!
-        "
-        class="contact-content-description"
-      />
+      <ad-paragraph class="contact-content-description">
+        Potrzebujesz remontu, renowacji lub wykończenia pod klucz? <br />
+        Skontaktuj się z nami – zajmiemy się wszystkim od projektu po ostatni detal.
+      </ad-paragraph>
+
       <ad-button
         class="contact-content-button caterpillar"
         label="Mail"
-        @click="navigateTo('mailto:business@atomic-it.org')"
+        @click="navigateTo('mailto:goldenboyslublin@gmail.com')"
       />
     </div>
   </div>

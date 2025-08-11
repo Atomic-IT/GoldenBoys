@@ -2,6 +2,7 @@
   <div class="home-container">
     <ad-section-navbar />
     <ad-section-faq :questions="questions" />
+    <ad-section-contact />
     <ad-section-footer />
   </div>
 </template>
