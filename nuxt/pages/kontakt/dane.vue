@@ -1,6 +1,6 @@
 <template>
-  <div id="services">
-    <dm-services-page />
+  <div id="dane">
+    <!-- <dm-dane-page /> -->
   </div>
 </template>
 

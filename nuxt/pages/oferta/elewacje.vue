@@ -1,6 +1,6 @@
 <template>
-  <div id="strona-glowna">
-    <gb-home-page />
+  <div id="elewacje">
+    <!-- <dm-elewacje-page /> -->
   </div>
 </template>
 

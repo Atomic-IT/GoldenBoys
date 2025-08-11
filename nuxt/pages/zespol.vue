@@ -1,6 +1,6 @@
 <template>
-  <div id="about">
-    <dm-about-page />
+  <div id="zespol">
+    <!-- <dm-zespol-page /> -->
   </div>
 </template>
 

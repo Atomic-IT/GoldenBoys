@@ -1,6 +1,6 @@
 <template>
-  <div id="strona-glowna">
-    <gb-home-page />
+  <div id="roboty-ziemne">
+    <!-- <dm-roboty-ziemne-page /> -->
   </div>
 </template>
 
