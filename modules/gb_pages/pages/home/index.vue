@@ -1,6 +1,7 @@
 <template>
   <div class="home-container">
     <ad-section-navbar />
+    <gb-newsletter />
     <ad-section-footer />
   </div>
 </template>

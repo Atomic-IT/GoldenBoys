@@ -18,6 +18,7 @@ vi.mock('../../modules', () => ({
 
   // GoldenBoys modules
   registerGBPages: vi.fn(),
+  registerGBTemplates: vi.fn(),
 }))
 
 const vueApp = {}
@@ -45,4 +46,5 @@ it('registers all modules with nuxtApp.vueApp', async (): Promise<void> => {
 
   // GoldenBoys modules
   expect(modules.registerGBPages).toHaveBeenCalledWith(vueApp)
+  expect(modules.registerGBTemplates).toHaveBeenCalledWith(vueApp)
 })

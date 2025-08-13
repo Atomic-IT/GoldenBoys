@@ -1,7 +1,7 @@
 import type { App } from 'vue'
 
-import { HomePage } from './pages'
+import { GBHomePage } from './pages'
 
 export function registerGBPages(app: App<Element>): void {
-  app.component('gb-home-page', HomePage)
+  app.component('gb-home-page', GBHomePage)
 }

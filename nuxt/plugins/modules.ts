@@ -14,6 +14,7 @@ import {
   registerDMTasks,
   // GoldenBoys modules
   registerGBPages,
+  registerGBTemplates,
 } from '../../modules'
 
 export default defineNuxtPlugin({
@@ -34,5 +35,6 @@ export default defineNuxtPlugin({
 
     // GoldenBoys modules
     registerGBPages(nuxtApp.vueApp)
+    registerGBTemplates(nuxtApp.vueApp)
   },
 })
