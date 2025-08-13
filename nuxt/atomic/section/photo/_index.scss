@@ -1,0 +1,78 @@
+.photo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .photo-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+  }
+}
+
+.photo-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.is-visible { opacity: 1; transform: none; }
+
+  .photo-text {
+    flex: 1 1 64%;
+    padding: 2.5rem 3.25rem;
+    z-index: 2;
+
+    h2 { font-size: 2.55rem; margin-bottom: 1.2rem; line-height: 1.12; }
+    p { font-size: 1.28rem; line-height: 1.72; }
+  }
+
+  .photo-image {
+    flex: 1 1 36%;
+    position: relative;
+    overflow: hidden;
+    max-width: 540px;
+    margin-inline: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.25);
+      transition: transform 0.6s ease;
+    }
+
+    &:hover img { transform: scale(1.03); }
+  }
+
+  &.reverse { flex-direction: row-reverse; }
+  &.reverse .photo-image img { clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%); }
+}
+
+@media (max-width: 768px) {
+  .photo-block {
+    flex-direction: column;
+    text-align: center;
+    .photo-text { flex: 1 1 auto; padding: 1.75rem 1.1rem; h2 { font-size: 2.05rem; } p { font-size: 1.08rem; line-height: 1.58; } }
+    .photo-image { flex: 0 0 auto; max-width: 88%; img { clip-path: none; aspect-ratio: 3/4; } }
+    &.reverse { flex-direction: column; }
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-block .photo-text { h2 { font-size: 2.75rem; } p { font-size: 1.32rem; } }
+  .photo-block .photo-image { max-width: 580px; }
+}
+
+@media (min-width: 1400px) {
+  .photo-image { max-width: 620px; }
+}
