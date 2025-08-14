@@ -5,6 +5,7 @@
     <ad-section-why-us />
     <ad-section-faq :questions="questions" />
     <ad-section-contact />
+    <gb-newsletter />
     <ad-section-footer />
   </div>
 </template>

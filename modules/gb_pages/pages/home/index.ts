@@ -1,1 +1,1 @@
-export { default as HomePage } from './index.vue'
+export { default as GBHomePage } from './index.vue'

@@ -15,3 +15,4 @@ export * from './dm_tasks'
 
 // GoldenBoys modules
 export * from './gb_pages'
+export * from './gb_templates'
