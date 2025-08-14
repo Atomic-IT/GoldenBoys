@@ -1,8 +1,7 @@
 <template>
   <div class="home-container">
     <ad-section-navbar />
-    <ad-section-photo />
-    <ad-section-why-us />
+    <gb-side-photo />
     <ad-section-faq :questions="questions" />
     <ad-section-contact />
     <gb-newsletter />

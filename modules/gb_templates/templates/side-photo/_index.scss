@@ -1,0 +1,155 @@
+#side-photo {
+  .side-photo {
+    display: flex;
+    flex-direction: column;
+
+    &-text-container {
+      width: 100%;
+      padding: 1em;
+
+      .side-photo-title,
+      .side-photo-text,
+      .side-photo-buttons .primary-button,
+      .side-photo-buttons .secondary-button,
+      .side-photo-image {
+        opacity: 0;
+      }
+
+      .side-photo-title {
+        font-family: $font-family-secondary;
+      }
+
+      .side-photo-text {
+        font-family: $font-family-base;
+      }
+
+      .side-photo-buttons {
+        margin: 2em 0;
+        display: flex;
+        gap: 1em;
+
+        .primary-button,
+        .secondary-button {
+          font-size: .9em;
+        }
+      }
+    }
+
+    &-image {
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (min-width: 392px) {
+    .side-photo {
+      &-text-container {
+        .side-photo-buttons {
+          .primary-button,
+          .secondary-button {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $md) {
+    .side-photo {
+      flex-direction: row;
+      align-items: center;
+
+      &-text-container {
+        max-width: 400px;
+
+        .side-photo-buttons {
+          margin-top: 1.5em;
+
+          .primary-button,
+          .secondary-button {
+            font-size: 1.1em;
+          }
+        }
+      }
+
+      &-image {
+        width: 100%;
+
+        img {
+          clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+          max-height: 500px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $lg) {
+    .side-photo {
+      margin: 0 auto;
+      gap: 4em;
+
+      &-text-container {
+        max-width: 550px;
+
+        .side-photo-title {
+          font-size: 2.5em;
+        }
+
+        .side-photo-text {
+          font-size: 1.25em;
+        }
+
+        .side-photo-buttons {
+          margin-top: 2em;
+          gap: 1.5em;
+        }
+      }
+
+      &-image {
+        img {
+          max-height: 550px;
+          max-width: 700px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $xl) {
+    .side-photo {
+      gap: 6em;
+
+      &-text-container {
+        max-width: 40vw;
+        padding: 0;
+        padding-left: 4em;
+
+        .side-photo-text {
+          max-width: 700px
+        }
+
+        .side-photo-buttons {
+          margin-top: 3em;
+          gap: 2em;
+        }
+      }
+
+      &-image {
+        img {
+          max-height: 800px;
+          max-width: 60vw;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $xxl) {
+    .side-photo {
+      gap: 8em;
+    }
+  }
+}
