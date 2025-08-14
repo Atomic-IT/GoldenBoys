@@ -1,7 +1,10 @@
 import type { App } from 'vue'
 
 import {
+  // DataManager modules
   contributorsImgUrl,
+  // GoldenBoys modules
+  gbImgUrl,
   imgUrl,
   storysetAboutImgUrl,
   storysetBlogImgUrl,
@@ -11,8 +14,9 @@ import {
 } from 'atomic'
 
 export function registerGlobalConstants(app: App): void {
-  const prefix = appEnv() === 'production' ? '/build' : ''
+  const prefix = appUrl() + (appEnv() === 'production' ? '/build' : '')
 
+  // DataManager modules
   /**
    *  Images urls
    */
@@ -24,4 +28,10 @@ export function registerGlobalConstants(app: App): void {
     prefix + storysetServicesImgUrl
   app.config.globalProperties.storysetBlogImgUrl = prefix + storysetBlogImgUrl
   app.config.globalProperties.technologiesImgUrl = prefix + technologiesImgUrl
+
+  // GoldenBoys modules
+  /**
+   *  Images urls
+   */
+  app.config.globalProperties.gbImgUrl = prefix + gbImgUrl
 }

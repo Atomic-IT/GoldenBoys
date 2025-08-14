@@ -1,0 +1,1 @@
+export { default as GBNewsletter } from './index.vue'

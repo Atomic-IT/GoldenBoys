@@ -1,3 +1,4 @@
+// DataManager modules
 export const imgUrl: string = '/img/'
 export const contributorsImgUrl: string = '/img/contributors/'
 export const storysetImgUrl: string = '/img/storyset/'
@@ -5,3 +6,6 @@ export const storysetAboutImgUrl: string = '/img/storyset/about/'
 export const storysetServicesImgUrl: string = '/img/storyset/services/'
 export const storysetBlogImgUrl: string = '/img/storyset/blog/'
 export const technologiesImgUrl: string = '/img/technologies/'
+
+// GoldenBoys modules
+export const gbImgUrl: string = '/img/goldenboys/'
