@@ -4,11 +4,11 @@
       <div class="top">
         <ad-anchor href="#start" class="header">
           <ad-image
-            :src="imgUrl + 'logo.svg'"
-            alt="DataManager logo"
+            :src="gbImgUrl + 'golden-boys-logo.svg'"
+            alt="GoldenBoys logo"
             class="logo"
           />
-          <ad-heading :tag="1" text="DataManager" class="name" />
+          <ad-heading :tag="1" text="GoldenBoys" class="name" />
         </ad-anchor>
         <div class="content">
           <div
@@ -35,7 +35,6 @@
         <ad-anchor-authors />
       </div>
     </div>
-    <dm-animation-hexagons />
   </section>
 </template>
 

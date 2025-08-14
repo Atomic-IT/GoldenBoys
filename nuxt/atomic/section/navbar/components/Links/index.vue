@@ -19,23 +19,15 @@ import { navLinks } from '.'
 onMounted(() => {
   if (isMobile()) {
     bounceFadeIn('.nav-links-container .nav-link', {
-      delay: 0.2,
+      delay: 0,
       duration: 0.05,
       stagger: 0.15,
-    })
-    bounceFadeIn('.nav-links-container .login-button', {
-      delay: 1.5,
-      duration: 0.2,
     })
   } else {
     bounceFadeIn('.nav-links-container .nav-link', {
-      delay: 2.2,
+      delay: 0.6,
       duration: 0.05,
       stagger: 0.15,
-    })
-    bounceFadeIn('.nav-links-container .login-button', {
-      delay: 2.9,
-      duration: 0.2,
     })
   }
 })
