@@ -1,6 +1,6 @@
 <template>
-  <div id="home">
-    <dm-home-page />
+  <div id="doswiadczenie">
+    <!-- <dm-doswiadczenie-page /> -->
   </div>
 </template>
 

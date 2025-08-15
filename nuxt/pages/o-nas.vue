@@ -1,6 +1,6 @@
 <template>
-  <div id="strona-glowna">
-    <gb-home-page />
+  <div id="o-nas">
+    <!-- <dm-o-nas-page /> -->
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div id="license">
-    <dm-license-page />
+  <div id="galeria">
+    <!-- <dm-galeria-page /> -->
   </div>
 </template>
 

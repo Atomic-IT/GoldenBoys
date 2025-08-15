@@ -1,0 +1,33 @@
+.primary-button,
+.secondary-button {
+  padding: .5em 1.5em !important;
+  border-radius: 1.5em !important;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.primary-button {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background-color: black !important;
+    border-color: white !important;
+    color: white !important;
+  }
+}
+
+.secondary-button {
+  background-color: white;
+  border-color: white;
+  color: $primary-color;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    color: white !important;
+  }
+}

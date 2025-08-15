@@ -1,6 +1,6 @@
 <template>
-  <div id="login">
-    <dm-login-page />
+  <div id="historia">
+    <!-- <dm-historia-page /> -->
   </div>
 </template>
 

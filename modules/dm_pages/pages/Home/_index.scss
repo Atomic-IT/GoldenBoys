@@ -1,10 +1,10 @@
 @import 'sections';
 
 .home-container {
-  padding-top: 140px;
+  padding-top: 80px;
 
-  @media (min-width: $sm) {
-    padding-top: 180px;
+  @media (min-width: $md) {
+    padding-top: 0;
   }
 }
 

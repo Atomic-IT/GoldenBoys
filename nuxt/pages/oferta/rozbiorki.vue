@@ -1,6 +1,6 @@
 <template>
-  <div id="blog">
-    <dm-blog-page />
+  <div id="rozbiorki">
+    <!-- <dm-rozbiorki-page /> -->
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div id="register">
-    <dm-register-page />
+  <div id="stany-surowe">
+    <!-- <dm-stany-surowe-page /> -->
   </div>
 </template>
 
