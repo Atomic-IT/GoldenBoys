@@ -2,6 +2,7 @@
   <div class="home-container">
     <ad-section-navbar />
     <gb-side-photo />
+    <gb-about-us />
     <ad-section-faq :questions="questions" />
     <ad-section-contact />
     <gb-newsletter />
